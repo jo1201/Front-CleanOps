@@ -2,8 +2,7 @@
   <q-item
     clickable
     tag="a"
-    target="_blank"
-    :href="link"
+    @click="navegatoDina()"
   >
     <q-item-section
       v-if="icon"
@@ -21,6 +20,7 @@
 
 <script>
 import { defineComponent } from 'vue'
+import { useRouter } from 'vue-router'
 
 export default defineComponent({
   name: 'EssentialLink',
@@ -43,6 +43,19 @@ export default defineComponent({
     icon: {
       type: String,
       default: ''
+    }
+  },
+  setup(props)
+  {
+    const router = useRouter()
+    return{
+        navegatoDina(){
+          if(props.link.startsWith('http')){
+            window.open(props.link,'_blank')
+          }else{
+            router.push({name:props.link})
+          }
+        }
     }
   }
 })
