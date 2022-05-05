@@ -1,7 +1,9 @@
 <template>
-	<div>
-		<h1>Login</h1>
+	<q-page class="flex flex-center">
+    <div>
+		  <h6>Login</h6>
 	</div>
+  </q-page>
 </template>
 
 <script>

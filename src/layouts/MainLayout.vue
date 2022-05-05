@@ -11,7 +11,7 @@
           @click="toggleLeftDrawer"
         />
 
-        <q-toolbar-title>
+        <q-toolbar-title style="">
           Clean-Ops
         </q-toolbar-title>
 
@@ -55,12 +55,6 @@ const linksList = [
     caption: 'ponte al dia con tu con tu trabajo',
     icon: 'school',
     link: 'Login-register'
-  },
-  {
-    title: 'Github',
-    caption: 'github.com/quasarframework',
-    icon: 'code',
-    link: 'https://github.com/quasarframework'
   }
 ]
 
