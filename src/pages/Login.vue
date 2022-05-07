@@ -12,8 +12,8 @@
               <q-card-section>
                 <div class="q-pt-lg">
                   <div class="col text-h6 ellipsi flex justify-center">
-                    <h2 color="primary" class="text-h5 text-uppercase q-my-none text-weight-regular">Login up
-                    </h2>
+                    <h5 class="text-uppercase q-my-none">Iniciar Sesión
+                    </h5>
                   </div>
                 </div>
               </q-card-section>
@@ -25,35 +25,25 @@
                   <q-input
                         rounded filled
                         v-model="lname"
-                        label="Idcard"
-                        lazy-rules
+                        label="Cedula"
                         :rules="[
-                          (val) =>
-                            (val !== null && val !== '') ||
-                            'Please type your idcard',
-                          (val) =>
-                            (val.length < 0) || 'Please type idcard',
-                        ]"
+                          val => val !== null && val !== ''|| 'Porfavor ingrese la cedula',
+                          val => val.length>=7 && val.length<=9 || 'La cedula tiene que ser de 7 a 9 digitos']"
                       />
                       <br>
                       <q-input
                         rounded filled
                         type="password"
                         v-model="password"
-                        label="Password"
-                        lazy-rules
-                        :rules="[
-                          (val) =>
-                            (val !== null && val !== '') ||
-                            'Please type your password',
-                          (val) =>
-                            (val.length<0 && val.length>8) || 'Please type a real age',
-                        ]"
+                        label="Contraseña"
+                        :rules="[ 
+                          val => val !== null && val !== ''|| 'Porfavor ingrese la contraseña',
+                          val => val.length>=4 && val.length <= 8 || 'La contraseña tiene que ser maximo de 4 a 8 caracteres']"
                       />
                       <div class="q-pa-md q-gutter-y-md column items-start">
                         <q-btn-group push>
-                          <q-btn push color="primary" label="Login" type="submit" icon="login" />
-                          <q-btn push color="primary" label="Clean" type="reset" icon="cleaning_services" />
+                          <q-btn push color="secondary" label="Iniciar" type="submit" icon="login" />
+                          <q-btn push color="secondary" label="Limpiar" type="reset" icon="cleaning_services" />
                         </q-btn-group>
                       </div>
                 </q-form>

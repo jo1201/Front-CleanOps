@@ -12,7 +12,6 @@
         />
 
         <q-toolbar-title style="">
-          Clean-Ops
         </q-toolbar-title>
 
         <div></div>
@@ -24,7 +23,7 @@
       show-if-above
       bordered
     >
-      <q-list>
+      <q-list >
         <q-item-label
           header
         >
@@ -53,7 +52,7 @@ const linksList = [
   {
     title: 'Inicio de sesión',
     caption: 'ponte al dia con tu con tu trabajo',
-    icon: 'school',
+    icon: 'login',
     link: 'Login-register'
   }
 ]
