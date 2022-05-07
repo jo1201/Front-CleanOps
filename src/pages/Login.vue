@@ -1,12 +1,12 @@
 <template>
 	 <q-layout view="hHh Lpr lFf">
-     <q-page-container class="bg-grey-2">
+     <q-page-container >
        <q-page padding class="row items-center justify-center">
          <div class="shadow-3">
             <q-card flat class="bg-white " >
               <q-card-section>
                 <q-avatar size="100px" class="absolute-center shadow-3 ">
-                  <img class="responsive" src="" />
+                  <img class="responsive" src="~assets/assets_profilepicture.png" />
                 </q-avatar>
               </q-card-section>
               <q-card-section>
@@ -30,7 +30,6 @@
                           val => val !== null && val !== ''|| 'Porfavor ingrese la cedula',
                           val => val.length>=7 && val.length<=9 || 'La cedula tiene que ser de 7 a 9 digitos']"
                       />
-                      <br>
                       <q-input
                         rounded filled
                         type="password"
@@ -54,7 +53,8 @@
      </q-page-container>
    </q-layout>
 </template>
-
+<style>
+</style>
 <script>
 import { defineComponent } from 'vue'
 

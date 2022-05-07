@@ -2,23 +2,23 @@
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
       <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          @click="toggleLeftDrawer"
-        />
-
-        <q-toolbar-title style="">
+        <q-toolbar-title>
+            <q-img
+              src="~assets/Logo-render2.png"
+              style="height: 70px; max-width: 70px"
+            />
+          Clean-Ops
         </q-toolbar-title>
-
-        <div></div>
+        <div>
+          <q-btn-group push>
+            <q-btn push to="/Login" label="Iniciar sesión" icon="login"/>
+            <q-btn push to="/Home" label="Principal" icon="home" />
+          </q-btn-group>
+        </div>
       </q-toolbar>
     </q-header>
 
-    <q-drawer
+   <!--  <q-drawer
       v-model="leftDrawerOpen"
       show-if-above
       bordered
@@ -36,7 +36,7 @@
           v-bind="link"
         />
       </q-list>
-    </q-drawer>
+    </q-drawer> -->
 
     <q-page-container>
       <router-view />
@@ -46,7 +46,8 @@
 
 <script>
 import { defineComponent, ref } from 'vue'
-import EssentialLink from 'components/EssentialLink.vue'
+import { useRouter } from 'vue-router'
+/* import EssentialLink from 'components/EssentialLink.vue'
 
 const linksList = [
   {
@@ -57,16 +58,16 @@ const linksList = [
   },
   {
     title: 'Inicio de sesión',
-    caption: 'ponte al dia con tu con tu trabajo',
+    caption: 'ponte al dia con tu trabajo',
     icon: 'login',
     link: 'Login-register'
   }
-]
+] */
 
 export default defineComponent({
   name: 'MainLayout',
 
-  components: {
+  /* components: {
     EssentialLink
   },
 
@@ -80,6 +81,7 @@ export default defineComponent({
         leftDrawerOpen.value = !leftDrawerOpen.value
       }
     }
-  }
+  } */
+  
 })
 </script>
