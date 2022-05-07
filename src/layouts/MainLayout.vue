@@ -50,6 +50,12 @@ import EssentialLink from 'components/EssentialLink.vue'
 
 const linksList = [
   {
+    title: 'Pagina de inicio',
+    caption: '¿Quienes somos ?',
+    icon: 'home',
+    link: 'IndexPage'
+  },
+  {
     title: 'Inicio de sesión',
     caption: 'ponte al dia con tu con tu trabajo',
     icon: 'login',

@@ -5,8 +5,8 @@
          <div class="shadow-3">
             <q-card flat class="bg-white " >
               <q-card-section>
-                <q-avatar size="100px" class="absolute-center shadow-4" >
-                  <img/>
+                <q-avatar size="100px" class="absolute-center shadow-3 ">
+                  <img class="responsive" src="" />
                 </q-avatar>
               </q-card-section>
               <q-card-section>
@@ -36,7 +36,7 @@
                         type="password"
                         v-model="password"
                         label="Contraseña"
-                        :rules="[ 
+                        :rules="[
                           val => val !== null && val !== ''|| 'Porfavor ingrese la contraseña',
                           val => val.length>=4 && val.length <= 8 || 'La contraseña tiene que ser maximo de 4 a 8 caracteres']"
                       />
