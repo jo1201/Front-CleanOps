@@ -4,7 +4,7 @@
       <q-toolbar>
         <q-toolbar-title>
             <q-img
-              src="~assets/Logo-render2.png"
+              src="~assets/Svg/assets_logo_color_2.svg"
               style="height: 70px; max-width: 70px"
             />
           Clean-Ops
@@ -82,6 +82,6 @@ export default defineComponent({
       }
     }
   } */
-  
+
 })
 </script>

@@ -2,26 +2,19 @@
 	 <q-layout view="hHh Lpr lFf">
      <q-page-container >
        <q-page padding class="row items-center justify-center">
-         <div class="shadow-3">
-            <q-card flat class="bg-white " >
+         <div class="shadow-3 rounded-borders">
+            <q-card flat class="bg-white rounded-borders" >
               <q-card-section>
                 <q-avatar size="100px" class="absolute-center shadow-3 ">
-                  <img class="responsive" src="~assets/assets_profilepicture.png" />
+                  <img class="responsive" src="~assets/Svg/assets_logo_color_1-2.svg" />
                 </q-avatar>
-              </q-card-section>
-              <q-card-section>
-                <div class="q-pt-lg">
-                  <div class="col text-h6 ellipsi flex justify-center">
-                    <h5 class="text-uppercase q-my-none">Iniciar Sesión
-                    </h5>
-                  </div>
-                </div>
               </q-card-section>
               <q-card-section>
                 <q-form
                   @submit="onSubmit"
                   @reset="onReset"
                  class="q-gutterd-nd">
+                  <div class="text-h6 text-center q-pt-xl q-pb-sm">Iniciar sesión</div>
                   <q-input
                         rounded filled
                         v-model="lname"
