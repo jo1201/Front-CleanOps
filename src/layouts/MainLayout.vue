@@ -3,23 +3,36 @@
     <q-header elevated>
       <q-toolbar>
         <q-toolbar-title>
-            <q-img
+          <q-img
             class="responsive"
-              src="~assets/assetsv0.2/boorm-text.svg"
-              style="height:90px; max-width:300px"
-            />
+            src="~assets/assetsv0.2/boorm-text.svg"
+            style="height: 90px; max-width: 300px"
+          />
         </q-toolbar-title>
         <div>
           <div class="q-pa-md q-gutter-sm">
-            <q-btn round push color="white" text-color="black" to="/Login"   icon="login"/>
-            <q-btn round push color="white"  text-color="black" to="/Home"   icon="home" />
-            <q-btn round push color="white"  text-color="black"   icon="code" />
+            <q-btn
+              round
+              push
+              color="white"
+              text-color="black"
+              to="/Login"
+              icon="login"
+            />
+            <q-btn
+              round
+              push
+              color="white"
+              text-color="black"
+              to="/Home"
+              icon="home"
+            />
           </div>
         </div>
       </q-toolbar>
     </q-header>
 
-   <!--  <q-drawer
+    <!--  <q-drawer
       v-model="leftDrawerOpen"
       show-if-above
       bordered
@@ -46,8 +59,8 @@
 </template>
 
 <script>
-import { defineComponent, ref } from 'vue'
-import { useRouter } from 'vue-router'
+import { defineComponent, ref } from "vue";
+import { useRouter } from "vue-router";
 /* import EssentialLink from 'components/EssentialLink.vue'
 
 const linksList = [
@@ -66,7 +79,7 @@ const linksList = [
 ] */
 
 export default defineComponent({
-  name: 'MainLayout',
+  name: "MainLayout",
 
   /* components: {
     EssentialLink
@@ -83,6 +96,5 @@ export default defineComponent({
       }
     }
   } */
-
-})
+});
 </script>
