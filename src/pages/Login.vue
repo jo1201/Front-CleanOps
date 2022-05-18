@@ -1,12 +1,10 @@
 <template>
-	 <q-layout view="hHh Lpr lFf">
-     <q-page-container >
-       <q-page padding class="row items-center justify-center">
-         <div class="shadow-3 rounded-borders">
-            <q-card flat class="bg-white rounded-borders" >
+       <q-page padding class="row bg-grey-2 content-center items-center justify-center">
+         <div class="shadow-2" style="border-radius:10px">
+            <q-card >
               <q-card-section>
-                <q-avatar size="100px" class="absolute-center shadow-3 ">
-                  <img class="responsive" src="~assets/Svg/assets_logo_color_1-2.svg" />
+                <q-avatar  size="100px" class="absolute-center shadow-2">
+                  <img class="responsive" src="~assets/assetsv0.2/Logo.svg" />
                 </q-avatar>
               </q-card-section>
               <q-card-section>
@@ -14,17 +12,24 @@
                   @submit="onSubmit"
                   @reset="onReset"
                  class="q-gutterd-nd">
-                  <div class="text-h6 text-center q-pt-xl q-pb-sm">Iniciar sesión</div>
+                  <div  class="text-h6 text-center q-pt-lg q-pb-sm">
+                    Acceder
+                  </div>
                   <q-input
                         rounded filled
                         v-model="lname"
+                        mask="#########"
+                        hint="La cedula solo acepta caracteres numericos"
                         label="Cedula"
                         :rules="[
                           val => val !== null && val !== ''|| 'Porfavor ingrese la cedula',
                           val => val.length>=7 && val.length<=9 || 'La cedula tiene que ser de 7 a 9 digitos']"
                       />
+                      <br>
                       <q-input
                         rounded filled
+                        mask="NNNNNNNN"
+                        hint="La constraseña solo acepta caracteres alfanumericos"
                         type="password"
                         v-model="password"
                         label="Contraseña"
@@ -42,9 +47,12 @@
               </q-card-section>
             </q-card>
           </div>
+          <q-footer>
+            <div class="text-center">
+               Todos los derechos reservados  © 2022
+            </div>
+          </q-footer>
        </q-page>
-     </q-page-container>
-   </q-layout>
 </template>
 <style>
 </style>

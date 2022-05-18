@@ -4,16 +4,17 @@
       <q-toolbar>
         <q-toolbar-title>
             <q-img
-              src="~assets/Svg/assets_logo_color_2.svg"
-              style="height: 70px; max-width: 70px"
+            class="responsive"
+              src="~assets/assetsv0.2/boorm-text.svg"
+              style="height:90px; max-width:300px"
             />
-          Clean-Ops
         </q-toolbar-title>
         <div>
-          <q-btn-group push>
-            <q-btn push to="/Login" label="Iniciar sesión" icon="login"/>
-            <q-btn push to="/Home" label="Principal" icon="home" />
-          </q-btn-group>
+          <div class="q-pa-md q-gutter-sm">
+            <q-btn round push color="white" text-color="black" to="/Login"   icon="login"/>
+            <q-btn round push color="white"  text-color="black" to="/Home"   icon="home" />
+            <q-btn round push color="white"  text-color="black"   icon="code" />
+          </div>
         </div>
       </q-toolbar>
     </q-header>
