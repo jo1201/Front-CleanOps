@@ -2,7 +2,7 @@
   "name": "cleanops",
   "version": "0.0.1",
   "description": "application for the management of preventive and corrective maintenance",
-  "productName": "CleanOps-Quasar-App",
+  "productName": "CleanOps",
   "author": "Sr-Wild",
   "private": true,
   "scripts": {
