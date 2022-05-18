@@ -1,4 +1,4 @@
-# CleanOps-Quasar-App (cleanops)
+# CleanOps-Quasar-App 
 
 application for the management of preventive and corrective maintenance
 
