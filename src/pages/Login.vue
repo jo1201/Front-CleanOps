@@ -21,10 +21,10 @@
                 :rules="[
                   (val) =>
                     (val !== null && val !== '') ||
-                    'Porfavor ingrese la cedula,solo acepta caracteres numericos',
+                    'Por favor ingrese la cedula, solo acepta caracteres numericos',
                   (val) =>
                     (val.length >= 7 && val.length <= 9) ||
-                    'La cedula tiene que ser de 7 a 9 digitos',
+                    'La cedula tiene debe tener de 7 a 9 digitos',
                 ]"
               />
               <q-input
@@ -37,10 +37,10 @@
                 :rules="[
                   (val) =>
                     (val !== null && val !== '') ||
-                    'Porfavor ingrese la contraseña,solo acepta caracteres alfanumericos',
+                    'Por favor ingrese la contraseña, solo acepta caracteres alfanumericos',
                   (val) =>
                     (val.length >= 4 && val.length <= 9) ||
-                    'La contraseña tiene que ser maximo de 4 a 8 caracteres',
+                    'La contraseña debe tener maximo de 4 a 8 caracteres',
                 ]"
               />
               <div class="q-pa-md q-gutter-y-md column items-start">
