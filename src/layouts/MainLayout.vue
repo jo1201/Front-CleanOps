@@ -24,7 +24,7 @@
               push
               color="white"
               text-color="black"
-              to="/Home"
+              to="/Welcome"
               icon="home"
             />
           </div>

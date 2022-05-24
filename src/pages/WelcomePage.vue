@@ -1,14 +1,14 @@
 <template>
   <q-layout>
-    <q-page padding class="col items-center q-mb-lg">
-      <div class="text-h1 text-left">
+    <q-page padding class="items-center">
+      <div class="row text-h1 items-center justify-left ">
         Bienvenido, usuario
       </div>
-      <div class="row text-h6 justify-left">
+      <div class="row text-h6 items-center justify-left">
           ¡Con CleanOps, vas a simplificar las actividades de mantenimiento,<br>
           ahorrarando tiempo, tomarndo mejores decisiones y generarando<br>
           mejores resultados!
-        <img class="responsive" src="~assets\assetsv0.2\Logo.svg" height="400" width="400" />
+        <q-img src="~assets\assetsv0.2\Logo.svg" height="400px" width="400px" position="50 100"/>
       </div>
     </q-page>
   <q-footer>
